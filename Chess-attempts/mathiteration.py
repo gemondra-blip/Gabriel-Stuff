@@ -125,7 +125,7 @@ def Listmaker2():
         Intlist2.append(int(y))
 
     for i in Intlist2:
-
+        print(f'{i}')
         current_i = i
         counterfunction(1)
         reiteration(i,1)
@@ -148,6 +148,8 @@ def countercomparingfunction(y=0):
 
     first_key, first_value = next(iter(countersummary.items()))
     first_value2=first_value
+    text2=(f'{first_key} had the smallest number of interations coming at {first_value}')
+    text1=(f'{first_key} had the greatest number of interations coming at {first_value}')
     
     for i, j in countersummary.items():
         
